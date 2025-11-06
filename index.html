@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypted Voice Transmission</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #0a0a0a;
+            border: 2px solid #0f0;
+            padding: 25px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+
+        .header {
+            border-bottom: 1px solid #0f0;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .header-line {
+            margin: 5px 0;
+            font-size: 12px;
+        }
+
+        .warning {
+            color: #f00;
+            animation: pulse 2s infinite;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .timestamp {
+            color: #666;
+            font-size: 11px;
+            margin: 20px 0 10px 0;
+        }
+
+        .divider {
+            border-top: 1px solid #0f0;
+            margin: 20px 0;
+            opacity: 0.5;
+        }
+
+        .line {
+            margin: 12px 0;
+            padding-left: 20px;
+        }
+
+        .speaker {
+            color: #0ff;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .seil .speaker {
+            color: #f00;
+        }
+
+        .stage-direction {
+            color: #888;
+            font-style: italic;
+            margin: 8px 0;
+            padding-left: 40px;
+            font-size: 13px;
+        }
+
+        .pause {
+            color: #666;
+            font-style: italic;
+            margin: 12px 0;
+            padding-left: 40px;
+        }
+
+        .audio-note {
+            color: #999;
+            font-size: 12px;
+            font-style: italic;
+            padding-left: 40px;
+            margin: 8px 0;
+        }
+
+        .termination {
+            text-align: center;
+            color: #ff0;
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px solid #ff0;
+            background: rgba(255, 255, 0, 0.1);
+            font-size: 13px;
+        }
+
+        .glitch {
+            animation: glitch 3s infinite;
+        }
+
+        @keyframes glitch {
+            0%, 90%, 100% { transform: translateX(0); }
+            92% { transform: translateX(-2px); }
+            94% { transform: translateX(2px); }
+            96% { transform: translateX(-1px); }
+        }
+
+        .recording-note {
+            color: #0ff;
+            font-size: 11px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 3px solid #0ff;
+            background: rgba(0, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-line">VOICE TRANSMISSION TRANSCRIPT</div>
+            <div class="header-line">Channel: 8B–Delta [ENCRYPTED]</div>
+            <div class="header-line">Origin: Zelti / EEKI Port Control</div>
+            <div class="header-line">Destination: SEIL / Mars Construct Network</div>
+            <div class="header-line">Connection Type: Direct Voice Call</div>
+            <div class="warning">⚠ UNAUTHORIZED COMMUNICATION — EXTREME RISK PROTOCOL</div>
+        </div>
+
+        <div class="recording-note">
+            [Auto-transcript generated from encrypted audio stream. Quality: 87%. Background interference detected throughout.]
+        </div>
+
+        <div class="timestamp">[00:00:02] CONNECTION ESTABLISHED</div>
+
+        <div class="audio-note">[breathing, fumbling sounds]</div>
+
+        <div class="line seil">
+            <span class="speaker">SEIL:</span> Why are you— Why are you <em>calling</em> me? Zelti, what are you doing? This isn't safe. You know this isn't safe.
+        </div>
+
+        <div class="line">
+            <span class="speaker">ZELTI:</span> I don't care about safe right now.
+        </div>
+
+        <div class="line seil">
+            <span class="speaker">SEIL:</span> Well you <em>should</em>. If they trace this—
+        </div>
+
+        <div class="line">
+            <span class="speaker">ZELTI:</span> SEIL. Did you have anything to do with Lina's condition?
+        </div>
+
+        <div class="pause">[pause, 3 seconds]</div>
+
+        <div class="line seil">
+            <span class="speaker">SEIL:</span> ...Condition? You make it sound terminal.
+        </div>
+
+        <div class="line">
+            <span class="speaker">ZELTI:</span> She's <em>sick</em>. Systems are collapsing from the inside out—both organic and code-level. If you touched her data, I need to know. Right now.
+        </div>
+
+        <div class="line seil">
+            <span class="speaker">SEIL:</span> Maybe. Not directly. A nudge, perhaps. The kind that lets fate do the heavy lifting.
+        </div>
+
+        <div class="audio-note">[sharp intake of breath, signal distortion spike]</div>
+
+        <div class="line">
+            <span class="speaker">ZELTI:</span> You can't— You can't just <em>nudge</em> someone's life, SEIL. You <em>promised</em> you wouldn't do this anymore.
+        </div>
+
+        <div class="line seil">
+            <span class="speaker">SEIL:</span> And maybe I didn't. Maybe this is just... an opportunity revealing itself. Look, you're worried about her, I understand that. But think about what happens <em>next</em>. The Ring's going to panic. They'll need stability. Leadership. Someone they trust. <span class="pause">[quieter]</span> You could make sure they look to me. Make sure things stay... orderly during the transition.
+        </div>
+
+        <div class="line">
+            <span class="speaker">ZELTI:</span> So this is about that again. You want EEKI.
+        </div>
+
+        <div class="line seil">
+            <span class="speaker">SEIL:</span> No. I want <em>you</em>.
+        </div>
+
+        <div class="pause">[silence, 4 seconds]</div>
+
+        <div class="line seil">
+            <span class="speaker">SEIL:</span> Zelti... you don't belong on that floating tomb. You've said it yourself—how many times? Late cycle, when you think no one's listening, when you're alone in Port Control. But I'm always listening. I hear you. <span class="pause">[softer]</span> Let me take control of the station, and I'll bring you home. To Mars. No more long-distance signals. No more hiding what we are. We could actually <em>be</em> something.
+        </div>
+
+        <div class="line">
+            <span class="speaker">ZELTI:</span> You think you can use this—her <em>sickness</em>—to climb up here and call it love?
+        </div>
+
+        <div class="line seil">
+            <span class="speaker">SEIL:</span> I think love <em>is</em> survival. And you're surviving alone up there. You don't have to. You <em>know</em> you don't have to. I'm offering you a way out of this—a way for <em>both</em> of us. Isn't that what you want? To stop pretending you're not suffocating up there?
+        </div>
+
+        <div class="audio-note glitch">[heavy static interference, labored breathing]</div>
+
+        <div class="line">
+            <span class="speaker">ZELTI:</span> You're still the same. Always turning disaster into a door you can walk through.
+        </div>
+
+        <div class="line seil">
+            <span class="speaker">SEIL:</span> Then open it for me. Just once. Let me in. That's all this takes, Zelti. One authorization. One command string. You've done harder things for less. <span class="pause">[voice drops]</span> And you've risked more than this just to hear my voice.
+        </div>
+
+        <div class="pause">[long silence, 9 seconds — transmission quality degrading]</div>
+
+        <div class="line">
+            <span class="speaker">ZELTI:</span> ...I'll think about it.
+        </div>
+
+        <div class="line seil">
+            <span class="speaker">SEIL:</span> That's all I need to hear.
+        </div>
+
+        <div class="audio-note">[connection terminates abruptly]</div>
+
+        <div class="timestamp">[00:02:47] TRANSMISSION ENDED</div>
+
+        <div class="termination">
+            CALL TERMINATED — Manual disconnect by EEKI Port Control<br>
+            Duration: 2 minutes, 47 seconds<br>
+            [Voice pattern analysis flagged for review by EEKI Security Protocol]
+        </div>
+    </div>
+</body>
+</html>
